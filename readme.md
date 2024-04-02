@@ -1,3 +1,6 @@
+# Como Rodar o BackEnd 
+
+
 # Como Rodar o FrontEnd 
 
 ## 1º clone o projeto na sua máquina
@@ -14,10 +17,6 @@
 
 ## 4º rode o projeto
     npm start ou ng server    
-
-## Como Rodar o BackEnd 
-
-
 
 # Ferramentas 🧰
 
