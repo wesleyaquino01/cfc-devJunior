@@ -1,31 +1,41 @@
-import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { Produto } from 'src/app/interfaces/Produtos';
+import { provideNgxMask } from 'ngx-mask';
 import { ProdutoService } from 'src/app/services/produto.service';
 
 @Component({
   selector: 'app-cadastrar-produtos',
   templateUrl: './cadastrar-produtos.component.html',
-  styleUrls: ['./cadastrar-produtos.component.scss']
+  styleUrls: ['./cadastrar-produtos.component.scss'],
+  providers: [
+    provideNgxMask(),
+  ]
 })
 export class CadastrarProdutosComponent {
-
+  private id = 0;
   formularioCadastrarProdutos = new FormGroup({
-    nome: new FormControl(),
-    preco: new FormControl(),
+    nome: new FormControl('', [Validators.required]),
+    preco: new FormControl(null,[Validators.required]),
   });
-
-
+  
   constructor(private produtoService: ProdutoService){
   }
-
-
+  
   onSubmit(){
     const nome = this.formularioCadastrarProdutos.value.nome;
     const preco = this.formularioCadastrarProdutos.value.preco
-    const dado = {nome, preco}
-    this.produtoService.criarProduto(dado);
+
+    //Validação ser é nulo ou undefined
+    if(!nome || !preco){
+      return alert('Digite o Nome e o Preço')
+    }
+
+
+    this.id++;
+    const produto = {id: this.id,nome, preco}
+    console.log(produto);
+
+    this.produtoService.criarProduto(produto);
   }
 
 

@@ -11,11 +11,20 @@ export class ProdutoService {
   constructor(private http: HttpClient) {
   }
 
+  criarProduto(produto: Produto){
+    // this.http.post('/api/produtos', produto)
+    this.produtos = [{nome: produto.nome, preco: produto.preco}]
+  }
+  
   listarProdutos(){
-    return this.http.get<Produto[]>('api/produtos');
+    // return this.http.get<Produto[]>('api/produtos');
+    console.log(this.produtos)
+    return this.produtos;
   }
 
-  criarProduto(produto: Produto){
-    this.http.post('/api/produtos', produto)
+  listarProdutoPorId(id: number){
+    return this.http.get(`/api/produtos/${id}`)
   }
+
+  
 }

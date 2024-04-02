@@ -1,7 +1,26 @@
+h1{
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+
 .container-cadastrar-produtos{
   display: flex;
+  justify-content: center;
+  align-items: center;
+  
   #form{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 6rem;
+    width: 20%;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+  }
+
+  .group-input{
+    width: 250px;
   }
 }

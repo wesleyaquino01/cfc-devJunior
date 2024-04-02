@@ -1,9 +1,6 @@
-<div class="container">
-  <h1>Lista De Produtos</h1>
-
-  <ul>
-    <li *ngFor="let produto of produtos">
-      {{produto.nome}} - R$ {{produto.preco}}
-    </li>
-  </ul>
+<h1>Lista De Produtos</h1>
+<div class="container-listar-produtos">
+  <mat-list role="list" *ngFor="let produto of produtos">
+    <mat-list-item role="listitem"><b>Nome:</b> {{produto.nome}} - <b>Preço:</b> R$ {{produto.preco}}</mat-list-item>
+  </mat-list>
 </div>

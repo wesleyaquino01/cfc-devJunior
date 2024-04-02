@@ -30,3 +30,6 @@ C:\Users\wesley\Desktop\cfc-devJunior\backend\obj\Debug\net8.0\refint\backend.dl
 C:\Users\wesley\Desktop\cfc-devJunior\backend\obj\Debug\net8.0\backend.pdb
 C:\Users\wesley\Desktop\cfc-devJunior\backend\obj\Debug\net8.0\backend.genruntimeconfig.cache
 C:\Users\wesley\Desktop\cfc-devJunior\backend\obj\Debug\net8.0\ref\backend.dll
+C:\Users\Desenvolvedor 3\Desktop\junior\cfc-devJunior\backend\obj\Debug\net8.0\backend.dll
+C:\Users\Desenvolvedor 3\Desktop\junior\cfc-devJunior\backend\obj\Debug\net8.0\refint\backend.dll
+C:\Users\Desenvolvedor 3\Desktop\junior\cfc-devJunior\backend\obj\Debug\net8.0\backend.pdb

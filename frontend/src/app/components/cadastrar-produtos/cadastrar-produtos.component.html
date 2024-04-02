@@ -1,16 +1,25 @@
 <h1>Cadastro de Produtos</h1>
 
 <div class="container-cadastrar-produtos">
-  <form [formGroup]="formularioCadastrarProdutos" id="form">
-    <mat-form-field appearance="outline">
+  <form [formGroup]="formularioCadastrarProdutos" id="form" (submit)="onSubmit()">
+    <mat-form-field class="group-input" appearance="outline">
+      <span matTextPrefix>&nbsp;</span>
       <mat-label>nome</mat-label>
       <input matInput formControlName="nome">
     </mat-form-field>
-    <mat-form-field appearance="outline">
+    <mat-form-field class="group-input" appearance="outline">
+      <span matTextPrefix>R$ &nbsp;</span>
       <mat-label>Preço</mat-label>
-      <input matInput formControlName="preco">
+      <input matInput 
+      formControlName="preco"
+      min="0"
+      mask="separator.2" 
+      [thousandSeparator]="'.'"  
+      [decimalMarker]="','" 
+      [showMaskTyped]="false" 
+      [dropSpecialCharacters]="true"
+      autocomplete="off">
     </mat-form-field>
-    <button mat-raised-button>Salvar</button>
+    <button mat-raised-button color="primary">Salvar</button>
   </form>
 </div>
-

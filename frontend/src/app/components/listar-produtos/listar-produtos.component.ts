@@ -10,11 +10,13 @@ import { ProdutoService } from 'src/app/services/produto.service';
 })
 export class ListarProdutosComponent {
   produtos: Produto[] = [];
-
+  
   constructor(private produtoService: ProdutoService){
   }
-
+  
   ngOnInit(){
+    this.produtos = [{nome: "Caderno Naruto Shippuden", preco: 20}]
     this.produtoService.listarProdutos();
   }
+
 }

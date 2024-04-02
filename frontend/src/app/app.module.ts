@@ -11,6 +11,18 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ListarProdutosComponent } from './components/listar-produtos/listar-produtos.component';
+import { provideHttpClient, withFetch } from '@angular/common/http';
+import {MatListModule} from '@angular/material/list';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import { IConfig, NgxMaskDirective, provideNgxMask } from 'ngx-mask';
+
+
+const maskConfigFunction: () => Partial<IConfig> = () => {
+  return {
+    validation: false,
+  };
+};
+
 
 @NgModule({
   declarations: [
@@ -27,9 +39,12 @@ import { ListarProdutosComponent } from './components/listar-produtos/listar-pro
     MatFormFieldModule,
     MatInputModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatListModule,
+    MatCheckboxModule,
+    NgxMaskDirective
   ],
-  providers: [],
+  providers: [provideHttpClient(withFetch()), provideNgxMask()],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
