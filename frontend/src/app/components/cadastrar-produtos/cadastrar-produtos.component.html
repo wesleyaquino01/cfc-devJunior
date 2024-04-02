@@ -1,0 +1,16 @@
+<h1>Cadastro de Produtos</h1>
+
+<div class="container-cadastrar-produtos">
+  <form [formGroup]="formularioCadastrarProdutos" id="form">
+    <mat-form-field appearance="outline">
+      <mat-label>nome</mat-label>
+      <input matInput formControlName="nome">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Preço</mat-label>
+      <input matInput formControlName="preco">
+    </mat-form-field>
+    <button mat-raised-button>Salvar</button>
+  </form>
+</div>
+
