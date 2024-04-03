@@ -4,6 +4,7 @@ h1{
   padding: 1rem;
   font-weight: bold;
 }
+
 .container-listar-produtos{
   display: flex;
   flex-direction: column;
@@ -21,4 +22,13 @@ h1{
     -moz-box-shadow: 10px 10px 10px -6px rgba(0,0,0,1);
     box-shadow: 10px 10px 10px -6px rgba(0,0,0,1);
   }
+
+  #icone-edit{
+    float: right;
+  }
+  #icone-lixeira{
+    color: rgb(255, 0, 0);
+    float: right;
+  }
+
 }

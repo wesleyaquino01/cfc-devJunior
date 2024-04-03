@@ -1,30 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\wesley\\Desktop\\cfc-devJunior\\backend\\",
+  "WorkspaceRootPath": "C:\\Users\\Desenvolvedor 3\\Desktop\\junior\\cfc-devJunior\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EBD32C19-AFA5-427F-8CBF-A7F31C1D620B}|backend.csproj|c:\\users\\wesley\\desktop\\cfc-devjunior\\backend\\controllers\\pessoascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBD32C19-AFA5-427F-8CBF-A7F31C1D620B}|backend.csproj|solutionrelative:controllers\\pessoascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBD32C19-AFA5-427F-8CBF-A7F31C1D620B}|backend.csproj|c:\\users\\wesley\\desktop\\cfc-devjunior\\backend\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EBD32C19-AFA5-427F-8CBF-A7F31C1D620B}|backend.csproj|c:\\users\\desenvolvedor 3\\desktop\\junior\\cfc-devjunior\\backend\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EBD32C19-AFA5-427F-8CBF-A7F31C1D620B}|backend.csproj|solutionrelative:controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBD32C19-AFA5-427F-8CBF-A7F31C1D620B}|backend.csproj|c:\\users\\wesley\\desktop\\cfc-devjunior\\backend\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBD32C19-AFA5-427F-8CBF-A7F31C1D620B}|backend.csproj|solutionrelative:models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBD32C19-AFA5-427F-8CBF-A7F31C1D620B}|backend.csproj|c:\\users\\wesley\\desktop\\cfc-devjunior\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{EBD32C19-AFA5-427F-8CBF-A7F31C1D620B}|backend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBD32C19-AFA5-427F-8CBF-A7F31C1D620B}|backend.csproj|c:\\users\\wesley\\desktop\\cfc-devjunior\\backend\\models\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBD32C19-AFA5-427F-8CBF-A7F31C1D620B}|backend.csproj|solutionrelative:models\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBD32C19-AFA5-427F-8CBF-A7F31C1D620B}|backend.csproj|c:\\users\\wesley\\desktop\\cfc-devjunior\\backend\\models\\contexto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBD32C19-AFA5-427F-8CBF-A7F31C1D620B}|backend.csproj|solutionrelative:models\\contexto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EBD32C19-AFA5-427F-8CBF-A7F31C1D620B}|backend.csproj|c:\\users\\desenvolvedor 3\\desktop\\junior\\cfc-devjunior\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBD32C19-AFA5-427F-8CBF-A7F31C1D620B}|backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,84 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Contexto.cs",
-              "DocumentMoniker": "C:\\Users\\wesley\\Desktop\\cfc-devJunior\\backend\\Models\\Contexto.cs",
-              "RelativeDocumentMoniker": "Models\\Contexto.cs",
-              "ToolTip": "C:\\Users\\wesley\\Desktop\\cfc-devJunior\\backend\\Models\\Contexto.cs",
-              "RelativeToolTip": "Models\\Contexto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "ProdutosController.cs",
+              "DocumentMoniker": "C:\\Users\\Desenvolvedor 3\\Desktop\\junior\\cfc-devJunior\\backend\\Controllers\\ProdutosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProdutosController.cs",
+              "ToolTip": "C:\\Users\\Desenvolvedor 3\\Desktop\\junior\\cfc-devJunior\\backend\\Controllers\\ProdutosController.cs",
+              "RelativeToolTip": "Controllers\\ProdutosController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwBcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T03:47:01.424Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Pessoa.cs",
-              "DocumentMoniker": "C:\\Users\\wesley\\Desktop\\cfc-devJunior\\backend\\Models\\Pessoa.cs",
-              "RelativeDocumentMoniker": "Models\\Pessoa.cs",
-              "ToolTip": "C:\\Users\\wesley\\Desktop\\cfc-devJunior\\backend\\Models\\Pessoa.cs",
-              "RelativeToolTip": "Models\\Pessoa.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T03:46:47.637Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Produto.cs",
-              "DocumentMoniker": "C:\\Users\\wesley\\Desktop\\cfc-devJunior\\backend\\Models\\Produto.cs",
-              "RelativeDocumentMoniker": "Models\\Produto.cs",
-              "ToolTip": "C:\\Users\\wesley\\Desktop\\cfc-devJunior\\backend\\Models\\Produto.cs",
-              "RelativeToolTip": "Models\\Produto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T03:46:36.505Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\wesley\\Desktop\\cfc-devJunior\\backend\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\wesley\\Desktop\\cfc-devJunior\\backend\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-03T03:46:34.587Z",
+              "WhenOpened": "2024-04-03T19:53:38.583Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ProdutosController.cs",
-              "DocumentMoniker": "C:\\Users\\wesley\\Desktop\\cfc-devJunior\\backend\\Controllers\\ProdutosController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ProdutosController.cs",
-              "ToolTip": "C:\\Users\\wesley\\Desktop\\cfc-devJunior\\backend\\Controllers\\ProdutosController.cs",
-              "RelativeToolTip": "Controllers\\ProdutosController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Desenvolvedor 3\\Desktop\\junior\\cfc-devJunior\\backend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Desenvolvedor 3\\Desktop\\junior\\cfc-devJunior\\backend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAACAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T03:36:06.851Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PessoasController.cs",
-              "DocumentMoniker": "C:\\Users\\wesley\\Desktop\\cfc-devJunior\\backend\\Controllers\\PessoasController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PessoasController.cs",
-              "ToolTip": "C:\\Users\\wesley\\Desktop\\cfc-devJunior\\backend\\Controllers\\PessoasController.cs",
-              "RelativeToolTip": "Controllers\\PessoasController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T03:22:03.404Z",
+              "WhenOpened": "2024-04-03T14:39:24.041Z",
               "EditorCaption": ""
             }
           ]

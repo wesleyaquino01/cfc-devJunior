@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { provideNgxMask } from 'ngx-mask';
+import { Produto } from 'src/app/interfaces/Produtos';
 import { ProdutoService } from 'src/app/services/produto.service';
 
 @Component({
@@ -12,7 +13,7 @@ import { ProdutoService } from 'src/app/services/produto.service';
   ]
 })
 export class CadastrarProdutosComponent {
-  private id = 0;
+  // private id = 0;
   formularioCadastrarProdutos = new FormGroup({
     nome: new FormControl('', [Validators.required]),
     preco: new FormControl(null,[Validators.required]),
@@ -31,11 +32,16 @@ export class CadastrarProdutosComponent {
     }
 
 
-    this.id++;
-    const produto = {id: this.id,nome, preco}
+    // this.id++;
+    // const produto = {id: this.id,nome, preco}
+    const produto = {nome, preco}
     console.log(produto);
 
-    this.produtoService.criarProduto(produto);
+    this.produtoService.criarProduto(produto).subscribe(
+      (produto: Produto) => {
+        console.log(produto);
+      }
+    )
   }
 
 

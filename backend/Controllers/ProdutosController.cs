@@ -1,7 +1,8 @@
 ﻿using backend.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace backend.Controllers{
+namespace backend.Controllers
+{
     [Route("api/[controller]")]
     [ApiController]
     public class ProdutosController : ControllerBase
@@ -14,14 +15,29 @@ namespace backend.Controllers{
             _contexto = contexto;
         }
 
+        // GET: api/
+        [HttpGet]
+        public ActionResult<IEnumerable<Produto>> Get()
+        {
+            return _contexto.Produto.ToList();
+        }
 
-        // GET: api/Produtos
-        //[HttpGet]
-        //public ActionResult<IEnumerable<Produto> ProdutosGet()
-        //{
-        //    return _contexto.Pessoas.ToList();
-        //}
-}
+
+
+        // POST: api/Produto
+        [HttpPost]
+        public ActionResult<Produto> Post(Produto produto)
+        {
+            if (_contexto.Produto.Any(p => p.Id == produto.Id))
+            {
+                return BadRequest("Já existe uma pessoa cadastrada com o ID informado.");
+            }
+
+            _contexto.Produto.Add(produto);
+            _contexto.SaveChanges();
+
+            return CreatedAtAction(nameof(Get), new { id = produto.Id }, produto);
+        }
     }
 }
 

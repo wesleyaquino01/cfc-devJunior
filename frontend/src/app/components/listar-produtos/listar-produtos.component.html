@@ -1,6 +1,6 @@
-<h1>Lista De Produtos</h1>
+<h1>Produtos Cadastrados</h1>
 <div class="container-listar-produtos">
   <mat-list role="list" *ngFor="let produto of produtos">
-    <mat-list-item role="listitem"><b>Nome:</b> {{produto.nome}} - <b>Preço:</b> R$ {{produto.preco}}</mat-list-item>
+    <mat-list-item role="listitem"><b>Nome:</b> {{produto.nome}} - <b>Preço:</b> R$ {{produto.preco}} <mat-icon id="icone-lixeira" (click)="deletarProduto()">delete_forever</mat-icon> <mat-icon id="icone-edit">edit</mat-icon></mat-list-item>
   </mat-list>
 </div>

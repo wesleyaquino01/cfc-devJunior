@@ -13,10 +13,9 @@ namespace backend.Models {
 
             protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
             {
-                optionsBuilder.UseInMemoryDatabase("Db_catalogo");
+                optionsBuilder.UseInMemoryDatabase("db_catalogo");
             }
 
-            public DbSet<Pessoa> Pessoas { get; set; }
-            public DbSet<Produto> Produtos { get; set; }
+            public DbSet<Produto> Produto { get; set; }
         }
 }
