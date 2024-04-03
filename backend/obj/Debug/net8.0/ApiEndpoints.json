@@ -1,15 +1,41 @@
 [
   {
-    "ContainingType": "backend.Controllers.WeatherForecastController",
+    "ContainingType": "backend.Controllers.PessoasController",
     "Method": "Get",
-    "RelativePath": "WeatherForecast",
+    "RelativePath": "api/Pessoas",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[backend.WeatherForecast, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[backend.Models.Pessoa, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "backend.Controllers.PessoasController",
+    "Method": "Post",
+    "RelativePath": "api/Pessoas",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pessoa",
+        "Type": "backend.Models.Pessoa",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "backend.Models.Pessoa",
         "MediaTypes": [
           "text/plain",
           "application/json",

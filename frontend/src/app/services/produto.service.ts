@@ -1,12 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Produto } from '../interfaces/Produtos';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProdutoService {
   produtos: Produto[] = [];
+  private url = environment.api;
 
   constructor(private http: HttpClient) {
   }
@@ -15,7 +17,7 @@ export class ProdutoService {
     // this.http.post('/api/produtos', produto)
     this.produtos = [{nome: produto.nome, preco: produto.preco}]
   }
-  
+
   listarProdutos(){
     // return this.http.get<Produto[]>('api/produtos');
     console.log(this.produtos)
@@ -26,5 +28,5 @@ export class ProdutoService {
     return this.http.get(`/api/produtos/${id}`)
   }
 
-  
+
 }

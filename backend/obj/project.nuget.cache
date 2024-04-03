@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "cS20dAKR4oB9vxaRv+d0k5FggeRptOdoywDv3O3E3F6JYjNLYmSdtPegZ3jgHq+P62FhOcj7a9ggOOlpszIUHg==",
+  "dgSpecHash": "y+8nR6Cu7P1MQ0/DR1okWCcbKhkjwsTEAM6S+FE7GdPrqA/FTlokBuaf/MTx17lz2cUZM6A74RxrK87HkONcfA==",
   "success": true,
   "projectFilePath": "C:\\Users\\wesley\\Desktop\\cfc-devJunior\\backend\\backend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wesley\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.3\\microsoft.entityframeworkcore.8.0.3.nupkg.sha512",
     "C:\\Users\\wesley\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.3\\microsoft.entityframeworkcore.abstractions.8.0.3.nupkg.sha512",
     "C:\\Users\\wesley\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.3\\microsoft.entityframeworkcore.analyzers.8.0.3.nupkg.sha512",
+    "C:\\Users\\wesley\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\8.0.3\\microsoft.entityframeworkcore.inmemory.8.0.3.nupkg.sha512",
     "C:\\Users\\wesley\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\wesley\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\wesley\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.0\\microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",

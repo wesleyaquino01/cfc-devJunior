@@ -1,16 +1,22 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿//using System.ComponentModel.DataAnnotations;
 
 namespace backend.Models
 {
     public class Produto
     {
+        //public int Id { get; set; }
+
+        //[Required(ErrorMessage = "Nome é obrigatório")]
+        //[StringLength(100, ErrorMessage = "Nome deve ter no máximo 100 caracteres")]
+        //public  string Nome { get; set; }
+
+        //[Required(ErrorMessage = "Preço é obrigatório")]
+        //public  decimal Preco { get; set; }
+
         public int Id { get; set; }
+        public string Nome { get; set; }
+        public int Preco { get; set; }
 
-        [Required(ErrorMessage = "nome é Obrigatório")]
-        [StringLength(100, ErrorMessage = "Nome deve ter no máximo 100 caracteres")]
-        public required string Nome { get; set; }
 
-        [Required(ErrorMessage = "Preço é Obrigatório")]
-        public required decimal Preco { get; set; }
     }
 }

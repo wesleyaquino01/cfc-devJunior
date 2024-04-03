@@ -5,6 +5,9 @@ C:\Users\wesley\Desktop\cfc-devJunior\backend\bin\Debug\net8.0\backend.deps.json
 C:\Users\wesley\Desktop\cfc-devJunior\backend\bin\Debug\net8.0\backend.runtimeconfig.json
 C:\Users\wesley\Desktop\cfc-devJunior\backend\bin\Debug\net8.0\backend.dll
 C:\Users\wesley\Desktop\cfc-devJunior\backend\bin\Debug\net8.0\backend.pdb
+C:\Users\wesley\Desktop\cfc-devJunior\backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\wesley\Desktop\cfc-devJunior\backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\wesley\Desktop\cfc-devJunior\backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Users\wesley\Desktop\cfc-devJunior\backend\bin\Debug\net8.0\Microsoft.OpenApi.dll
 C:\Users\wesley\Desktop\cfc-devJunior\backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\wesley\Desktop\cfc-devJunior\backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
@@ -16,6 +19,7 @@ C:\Users\wesley\Desktop\cfc-devJunior\backend\obj\Debug\net8.0\backend.AssemblyI
 C:\Users\wesley\Desktop\cfc-devJunior\backend\obj\Debug\net8.0\backend.csproj.CoreCompileInputs.cache
 C:\Users\wesley\Desktop\cfc-devJunior\backend\obj\Debug\net8.0\backend.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\wesley\Desktop\cfc-devJunior\backend\obj\Debug\net8.0\backend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\wesley\Desktop\cfc-devJunior\backend\obj\Debug\net8.0\backend.sourcelink.json
 C:\Users\wesley\Desktop\cfc-devJunior\backend\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\wesley\Desktop\cfc-devJunior\backend\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\wesley\Desktop\cfc-devJunior\backend\obj\Debug\net8.0\staticwebassets\msbuild.backend.Microsoft.AspNetCore.StaticWebAssets.props
@@ -30,6 +34,3 @@ C:\Users\wesley\Desktop\cfc-devJunior\backend\obj\Debug\net8.0\refint\backend.dl
 C:\Users\wesley\Desktop\cfc-devJunior\backend\obj\Debug\net8.0\backend.pdb
 C:\Users\wesley\Desktop\cfc-devJunior\backend\obj\Debug\net8.0\backend.genruntimeconfig.cache
 C:\Users\wesley\Desktop\cfc-devJunior\backend\obj\Debug\net8.0\ref\backend.dll
-C:\Users\Desenvolvedor 3\Desktop\junior\cfc-devJunior\backend\obj\Debug\net8.0\backend.dll
-C:\Users\Desenvolvedor 3\Desktop\junior\cfc-devJunior\backend\obj\Debug\net8.0\refint\backend.dll
-C:\Users\Desenvolvedor 3\Desktop\junior\cfc-devJunior\backend\obj\Debug\net8.0\backend.pdb
