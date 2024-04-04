@@ -1,6 +1,17 @@
-<h1>Produtos Cadastrados</h1>
+<h1>Visualizar Produtos</h1>
+
+
 <div class="container-listar-produtos">
+  <div class="group-buscar">
+    <mat-form-field class="mat-form-field ">
+      <mat-label>Buscar Produto</mat-label>
+      <input matInput>
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="buscarProduto()"><mat-icon>search</mat-icon></button>
+  </div>
+
+
   <mat-list role="list" *ngFor="let produto of produtos">
-    <mat-list-item role="listitem"><b>Nome:</b> {{produto.nome}} - <b>Preço:</b> R$ {{produto.preco}} <mat-icon id="icone-lixeira" (click)="deletarProduto()">delete_forever</mat-icon> <mat-icon id="icone-edit">edit</mat-icon></mat-list-item>
+    <mat-list-item role="listitem"><b>Nome:</b> {{produto.nome}} <br> <b>Preço:</b> R$ {{produto.preco}} <mat-icon id="icone-lixeira" (click)="deletarProduto(produto)">delete_forever</mat-icon></mat-list-item>
   </mat-list>
 </div>

@@ -19,7 +19,7 @@ builder.Services.AddCors(options =>
         builder =>
         {
             builder
-                .AllowAnyOrigin() // Substitua por `http://localhost:4200` para produção
+                .AllowAnyOrigin() // Substitua por `http://localhost:4200` para produção!
                 .AllowAnyMethod()
                 .AllowAnyHeader();
         });

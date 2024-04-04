@@ -13,7 +13,6 @@ export class ProdutoService {
   private apiUrl = environment.api;
   private produtosAtualizados = new EventEmitter<void>();
   public produtosAtualizadosSubject = new Subject<void>();
-  // "http://localhost:5178/api/produtos"
 
   constructor(private http: HttpClient) {
   }
@@ -36,12 +35,17 @@ export class ProdutoService {
     throw error;
   }
 
-  
   listarProdutos(): Observable<Produto[]> {
     return this.http.get<Produto[]>(this.apiUrl + 'api/produtos');
   }
 
   listarProdutoPorId(id: number){
-    return this.http.get(`/api/produtos/${id}`)
+    return this.http.get(this.apiUrl + `api/produtos/${id}`)
   }
+
+  deletarProdutoPorId(id: number){
+    return this.http.delete(this.apiUrl + `api/produtos/${id}`)
+  }
+
+
 }

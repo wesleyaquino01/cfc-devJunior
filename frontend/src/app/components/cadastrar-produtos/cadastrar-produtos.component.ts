@@ -18,24 +18,19 @@ export class CadastrarProdutosComponent {
     nome: new FormControl('', [Validators.required]),
     preco: new FormControl(null,[Validators.required]),
   });
-  
+
   constructor(private produtoService: ProdutoService){
   }
-  
+
   onSubmit(){
     const nome = this.formularioCadastrarProdutos.value.nome;
     const preco = this.formularioCadastrarProdutos.value.preco
 
     //Validação ser é nulo ou undefined
     if(!nome || !preco){
-      return alert('Digite o Nome e o Preço')
+      return alert('Preencha Todos os Campos!')
     }
-
-
-    // this.id++;
-    // const produto = {id: this.id,nome, preco}
     const produto = {nome, preco}
-    console.log(produto);
 
     this.produtoService.criarProduto(produto).subscribe(
       (produto: Produto) => {

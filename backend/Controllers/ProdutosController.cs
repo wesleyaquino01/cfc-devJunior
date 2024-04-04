@@ -15,15 +15,6 @@ namespace backend.Controllers
             _contexto = contexto;
         }
 
-        // GET: api/
-        [HttpGet]
-        public ActionResult<IEnumerable<Produto>> Get()
-        {
-            return _contexto.Produto.ToList();
-        }
-
-
-
         // POST: api/Produto
         [HttpPost]
         public ActionResult<Produto> Post(Produto produto)
@@ -38,13 +29,45 @@ namespace backend.Controllers
 
             return CreatedAtAction(nameof(Get), new { id = produto.Id }, produto);
         }
+
+
+        //Get: api/produto/id
+        [HttpGet("{id}")]
+        public ActionResult<Produto> GetProdutoPorId(int id)
+        {
+            var produto = _contexto.Produto.Find(id);
+
+            if (produto == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(produto);
+        }
+
+        // GET: api/Produto
+        [HttpGet]
+        public ActionResult<IEnumerable<Produto>> Get()
+        {
+            return _contexto.Produto.ToList();
+        }
+
+
+        //Delete: api/Produto/id
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            var produto = _contexto.Produto.Find(id);
+
+            if (produto == null)
+            {
+                return NotFound();
+            }
+
+            _contexto.Produto.Remove(produto);
+            _contexto.SaveChanges();
+
+            return NoContent();
+        }
     }
 }
-
-
-//[HttpGet]
-//public async Task<IActionResult> ListarAsync()
-//{
-//    var produtos = await _contexto.Produtos.ToListAsync();
-//    return Ok(produtos);
-//}

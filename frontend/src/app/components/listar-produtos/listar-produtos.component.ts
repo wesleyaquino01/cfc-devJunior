@@ -17,10 +17,18 @@ export class ListarProdutosComponent {
   constructor(private readonly produtoService: ProdutoService){
   }
 
-  deletarProduto(){
+  deletarProduto(event: any){
     if(confirm("Deseja Deletar esse Produto ?") == true){
-      console.log("Deletado > OK")
+      console.log("Deletado > OK", JSON.stringify(event))
+      console.log("Teste", event.id)
     }
+  }
+
+  buscarProduto(){
+    this.produtos.filter((element) => {
+      element.nome == "Caderno"
+      return element
+    })
   }
 
   ngOnInit() {
