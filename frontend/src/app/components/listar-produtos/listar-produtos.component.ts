@@ -1,5 +1,5 @@
 
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Produto } from 'src/app/interfaces/Produtos';
 import { ProdutoService } from 'src/app/services/produto.service';
 
@@ -22,8 +22,15 @@ export class ListarProdutosComponent {
   deletarProduto(event: any){
     if(confirm("Deseja Deletar esse Produto ?") == true){
       console.log("Deletado o Produto: ", JSON.stringify(event))
-      console.log("Teste", event.id)
-      alert("Produto Deletado com Sucesso!")
+      this.produtoService.deletarProdutoPorId(event.id).subscribe({
+        next: data => {
+            this.carregarProdutos();
+            alert('Produto Deletado com Sucesso!')
+        },
+        error: error => {
+          alert(`${error}`);
+        }
+    });
     }
   }
 
@@ -49,11 +56,16 @@ export class ListarProdutosComponent {
 
 
   ngOnInit() {
-    this.produtoService.listarProdutos()
-      .subscribe((produtos: Produto[]) => {
-        this.produtos = produtos;
-        this.produtosFiltrados = produtos;
-      });
+    this.produtoService.setter(this.carregarProdutos())
   }
+
+  carregarProdutos(){
+    this.produtoService.listarProdutos()
+    .subscribe((produtos: Produto[]) => {
+      this.produtos = produtos;
+      return this.produtosFiltrados = produtos;
+    });
+  }
+
 }
 

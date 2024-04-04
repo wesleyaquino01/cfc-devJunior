@@ -17,7 +17,8 @@
   </div>
 
   <mat-list role="list" *ngFor="let produto of produtosFiltrados"> <mat-list-item role="listitem">
-      <b>Nome:</b> {{produto.nome}} <br>
+      <b>Nome:</b> {{produto.nome}} 
+      <br>
       <b>Preço:</b> {{produto.preco | currency : 'BRL'}}
       <mat-icon id="icone-lixeira" (click)="deletarProduto(produto)">delete_forever</mat-icon>
     </mat-list-item>

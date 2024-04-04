@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { provideNgxMask } from 'ngx-mask';
 import { Produto } from 'src/app/interfaces/Produtos';
@@ -13,6 +13,9 @@ import { ProdutoService } from 'src/app/services/produto.service';
   ]
 })
 export class CadastrarProdutosComponent {
+  produtos: Produto[] = [];
+  produtosFiltrados: Produto[] = [];
+  @Input() funcaoListar: any;
 
   formularioCadastrarProdutos = new FormGroup({
     nome: new FormControl('', [Validators.required]),
@@ -22,11 +25,13 @@ export class CadastrarProdutosComponent {
   constructor(private produtoService: ProdutoService){
   }
 
+  ngOnInit(){
+  }
+
   onSubmit(){
     const nome = this.formularioCadastrarProdutos.value.nome;
     const preco = this.formularioCadastrarProdutos.value.preco
 
-    //Verificar se && atende melhor que o || aqui
     if(!nome || !preco){
       return alert('Preencha Todos os Campos!')
     }
@@ -35,10 +40,9 @@ export class CadastrarProdutosComponent {
 
     this.produtoService.criarProduto(produto).subscribe(
       (produto: Produto) => {
+        window.location.reload();
         alert(`Produto Cadastrado com Sucesso! ${JSON.stringify(produto)}`);
       }
     )
   }
-
-
 }

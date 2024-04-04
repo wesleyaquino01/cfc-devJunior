@@ -2,31 +2,35 @@ import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http
 import { EventEmitter, Injectable } from '@angular/core';
 import { Produto } from '../interfaces/Produtos';
 import { environment } from 'src/environments/environment';
-import { retry, catchError, tap } from 'rxjs/operators';
-import { Observable, Subject } from 'rxjs';
+import { catchError } from 'rxjs/operators';
+import { Observable, map } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProdutoService {
-  produtos: Produto[] = [];
   private apiUrl = environment.api;
-  private produtosAtualizados = new EventEmitter<void>();
-  public produtosAtualizadosSubject = new Subject<void>();
+  produtos: Produto[] = [];
+  produtosService: Produto[] = [];
 
   constructor(private http: HttpClient) {
   }
 
-  get produtosAtualizadosEmitter(): Observable<void> {
-    return this.produtosAtualizadosSubject.asObservable();
+
+  getter(){
+    return this.produtosService
   }
+
+  setter(value: any){
+    this.produtosService=value;
+  }
+
 
   criarProduto(produto: Produto): Observable<Produto> {
     const headers = new HttpHeaders({'Content-Type': 'application/json'});
     return this.http.post<Produto>(this.apiUrl + 'api/produtos', produto, {headers})
       .pipe(
-        catchError(this.handleError),
-        tap(() => this.produtosAtualizados.emit()),
+        catchError(this.handleError)
       );
   }
 
@@ -46,6 +50,5 @@ export class ProdutoService {
   deletarProdutoPorId(id: number){
     return this.http.delete(this.apiUrl + `api/produtos/${id}`)
   }
-
 
 }

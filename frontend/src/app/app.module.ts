@@ -15,6 +15,7 @@ import { provideHttpClient, withFetch } from '@angular/common/http';
 import {MatListModule} from '@angular/material/list';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { IConfig, NgxMaskDirective, provideNgxMask } from 'ngx-mask';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 
 import ptBr from '@angular/common/locales/pt';
@@ -46,7 +47,8 @@ registerLocaleData(ptBr);
     ReactiveFormsModule,
     MatListModule,
     MatCheckboxModule,
-    NgxMaskDirective
+    NgxMaskDirective,
+    MatProgressSpinnerModule
   ],
   providers: [provideHttpClient(withFetch()), provideNgxMask(), { provide: LOCALE_ID, useValue: 'pt' }],
   bootstrap: [AppComponent]
