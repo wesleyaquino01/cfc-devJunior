@@ -13,7 +13,7 @@ import { ProdutoService } from 'src/app/services/produto.service';
   ]
 })
 export class CadastrarProdutosComponent {
-  // private id = 0;
+
   formularioCadastrarProdutos = new FormGroup({
     nome: new FormControl('', [Validators.required]),
     preco: new FormControl(null,[Validators.required]),
@@ -26,15 +26,16 @@ export class CadastrarProdutosComponent {
     const nome = this.formularioCadastrarProdutos.value.nome;
     const preco = this.formularioCadastrarProdutos.value.preco
 
-    //Validação ser é nulo ou undefined
+    //Verificar se && atende melhor que o || aqui
     if(!nome || !preco){
       return alert('Preencha Todos os Campos!')
     }
+
     const produto = {nome, preco}
 
     this.produtoService.criarProduto(produto).subscribe(
       (produto: Produto) => {
-        console.log(produto);
+        alert(`Produto Cadastrado com Sucesso! ${JSON.stringify(produto)}`);
       }
     )
   }

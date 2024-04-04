@@ -13,31 +13,47 @@ import { ProdutoService } from 'src/app/services/produto.service';
 })
 export class ListarProdutosComponent {
   produtos: Produto[] = [];
+  produtosFiltrados: Produto[] = [];
+  filtroNome = '';
 
   constructor(private readonly produtoService: ProdutoService){
   }
 
   deletarProduto(event: any){
     if(confirm("Deseja Deletar esse Produto ?") == true){
-      console.log("Deletado > OK", JSON.stringify(event))
+      console.log("Deletado o Produto: ", JSON.stringify(event))
       console.log("Teste", event.id)
+      alert("Produto Deletado com Sucesso!")
     }
   }
 
-  buscarProduto(){
-    this.produtos.filter((element) => {
-      element.nome == "Caderno"
-      return element
-    })
+  buscarProduto() {
+
+    if(!this.filtroNome){
+      return alert("Digite o Nome do Produto Que Deseja Buscar!")
+    }
+
+    this.produtosFiltrados = this.produtos.filter((produto) =>
+      produto.nome.toLowerCase().includes(this.filtroNome.toLowerCase())
+    );
+
+    if (this.produtosFiltrados.length === 0) {
+      alert("Produto não encontrado!");
+    }
   }
+
+  mostrarTodosProdutos(){
+    this.produtosFiltrados = this.produtos;
+    this.filtroNome = '';
+  }
+
 
   ngOnInit() {
     this.produtoService.listarProdutos()
       .subscribe((produtos: Produto[]) => {
         this.produtos = produtos;
-        console.log(produtos);
+        this.produtosFiltrados = produtos;
       });
   }
 }
 
-// this.produtos = [{nome: "Caderno Naruto Shippuden", preco: 20}]

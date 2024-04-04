@@ -10,13 +10,13 @@
     <mat-form-field class="group-input" appearance="outline">
       <span matTextPrefix>R$ &nbsp;</span>
       <mat-label>Preço</mat-label>
-      <input matInput 
+      <input matInput
       formControlName="preco"
       min="0"
-      mask="separator.2" 
-      [thousandSeparator]="'.'"  
-      [decimalMarker]="','" 
-      [showMaskTyped]="false" 
+      mask="separator.2"
+      [thousandSeparator]="'.'"
+      [decimalMarker]="','"
+      [showMaskTyped]="false"
       [dropSpecialCharacters]="true"
       autocomplete="off">
     </mat-form-field>

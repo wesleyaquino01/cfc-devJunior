@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { DEFAULT_CURRENCY_CODE, LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -17,12 +17,16 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import { IConfig, NgxMaskDirective, provideNgxMask } from 'ngx-mask';
 
 
+import ptBr from '@angular/common/locales/pt';
+import { registerLocaleData } from '@angular/common';
+
 const maskConfigFunction: () => Partial<IConfig> = () => {
   return {
     validation: false,
   };
 };
 
+registerLocaleData(ptBr);
 
 @NgModule({
   declarations: [
@@ -44,7 +48,7 @@ const maskConfigFunction: () => Partial<IConfig> = () => {
     MatCheckboxModule,
     NgxMaskDirective
   ],
-  providers: [provideHttpClient(withFetch()), provideNgxMask()],
+  providers: [provideHttpClient(withFetch()), provideNgxMask(), { provide: LOCALE_ID, useValue: 'pt' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

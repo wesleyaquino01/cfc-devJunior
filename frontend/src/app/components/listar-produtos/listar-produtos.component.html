@@ -5,13 +5,21 @@
   <div class="group-buscar">
     <mat-form-field class="mat-form-field ">
       <mat-label>Buscar Produto</mat-label>
-      <input matInput>
-    </mat-form-field>
-    <button mat-raised-button color="primary" (click)="buscarProduto()"><mat-icon>search</mat-icon></button>
+      <input matInput [(ngModel)]="filtroNome" placeholder="Nome do Produto"> </mat-form-field>
+    <button mat-raised-button color="primary" (click)="buscarProduto()">
+      Buscar
+      <mat-icon>search</mat-icon>
+    </button>
+    <button mat-raised-button color="primary" (click)="mostrarTodosProdutos()">
+      Mostrar Todos
+      <mat-icon>list_alt</mat-icon>
+    </button>
   </div>
 
-
-  <mat-list role="list" *ngFor="let produto of produtos">
-    <mat-list-item role="listitem"><b>Nome:</b> {{produto.nome}} <br> <b>Preço:</b> R$ {{produto.preco}} <mat-icon id="icone-lixeira" (click)="deletarProduto(produto)">delete_forever</mat-icon></mat-list-item>
+  <mat-list role="list" *ngFor="let produto of produtosFiltrados"> <mat-list-item role="listitem">
+      <b>Nome:</b> {{produto.nome}} <br>
+      <b>Preço:</b> {{produto.preco | currency : 'BRL'}}
+      <mat-icon id="icone-lixeira" (click)="deletarProduto(produto)">delete_forever</mat-icon>
+    </mat-list-item>
   </mat-list>
 </div>
